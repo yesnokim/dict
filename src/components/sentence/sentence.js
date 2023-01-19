@@ -305,7 +305,7 @@ const Sentence = () => {
   return (
     <div className="bg">
       <div className="header">
-        <div className="title">아윤이의 영어 공부</div>
+        <div className="title">아윤이와 이안이의 영어 공부</div>
       </div>
       <div className={`contents ${!quizStart && "contents_hide"}`}>
         {showResult ? getQuizResult() : getQuizContent()}
