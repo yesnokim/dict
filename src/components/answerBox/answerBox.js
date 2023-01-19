@@ -8,7 +8,7 @@ const AnswerBox = ({ rightAnswer, onResult }) => {
     console.log("handleAnsserChanged", e.target.value, rightAnswer);
     if (!rightAnswer) return "";
 
-    setYourAnswer(e.target.value);
+    setYourAnswer(e.target.value?.trim().toLowerCase());
   };
 
   const handleAnswerEnter = (e) => {
