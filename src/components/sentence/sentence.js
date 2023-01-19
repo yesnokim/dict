@@ -1,7 +1,6 @@
 import {
   Button,
   Card,
-  Paper,
   Table,
   TableCell,
   TableHead,
@@ -91,7 +90,7 @@ const QuizSet = [
 
 const ImageSet = ["ayun_ski.jpg", "ian_ski.jpg"];
 
-const QuizCount = 3;
+const QuizCount = 5;
 
 const Sentence = () => {
   const [quiz, setQuiz] = useState();
@@ -293,7 +292,7 @@ const Sentence = () => {
 
   const RestartButton = () =>
     quizStart &&
-    !showResult && (
+    showResult && (
       <Button
         className="reset_button"
         variant="contained"
