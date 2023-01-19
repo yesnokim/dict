@@ -20,8 +20,10 @@ const AnswerBox = ({ rightAnswer, onResult }) => {
     <>
       <TextField
         label="여기에 답을 써봐"
+        autoFocus={true}
         onChange={handleAnswerChanged}
         onKeyDown={handleAnswerEnter}
+        autoComplete="off"
       />
     </>
   );

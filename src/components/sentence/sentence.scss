@@ -1,74 +1,103 @@
-.header {
-    margin: 20px;
-
-    .title {
-        font-size: x-large;
-        font-weight: 800;
-
-
-    }
-}
-
-.dict {
-    color: navy;
-}
-
-.quiz_box {
+.bg{
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    height: 200px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 
-    .quizSentence {
-        font-size: large;
-    }
-
-    .quizKorean {
+    .header {
         margin: 20px;
-        font-size: large;
-        color: blue
+        
+        .title {
+            font-size: x-large;
+            font-weight: 800;
+            
+            
+        }
     }
-}
+    
+    .contents {
+        margin: 20px;
+        width: 400px;
+        .dict {
+            color: navy;
+        }
 
-.score {
-    margin: 20px;
-    font-size: x-large;
-
-    .my_score {
-        color: red;
-        font-size: small;
+        .title_image {
+            margin: 10px;
+            height: 300px;
+        }
+        
+        .quiz_box {
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 200px;
+            
+            .quizSentence {
+                font-size: large;
+            }
+            
+            .quizKorean {
+                margin: 20px;
+                font-size: large;
+                color: blue
+            }
+        }
+        
+        .score {
+            margin: 20px;
+            font-size: x-large;
+            
+            .my_score {
+                margin: 10px;
+                color: red;
+                font-size: small;
+            }
+            
+            .correct {
+                font-size: x-large;
+                color: rgb(186, 33, 153);
+            }
+            
+            .wrong {
+                font-size: medium;
+                color: gray;
+            }
+        }
     }
-
-    .correct {
-        font-size: x-large;
-        color: rgb(186, 33, 153);
+    
+    .contents_hide {
+        visibility: collapse;
     }
-
+    
+    
+    .footer {
+        margin-top: 10px;
+        
+        .button_group {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            
+            .quiz_button {
+                width: 200px;
+                font-size: large;
+                margin: 10px;
+            }
+            
+            .reset_button {
+                width: 200px;
+                background-color: navy;
+                margin: 10px;
+            }
+        }
+    }
+    
     .wrong {
-        font-size: medium;
-        color: gray;
-    }
-}
-
-.footer {
-    margin-top: 10px;
-
-    .button_group {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-
-        .quiz_button {
-            width: 200px;
-            font-size: large;
-            margin: 10px;
-        }
-
-        .reset_button {
-            width: 200px;
-            background-color: navy;
-            margin: 10px;
-        }
+        color: red;
+        font-weight: 1000;
     }
 }
