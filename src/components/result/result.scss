@@ -1,7 +1,13 @@
-.result_table{
-        .wrong {
-            color: red;
-            font-weight: 1000;
-            font-size: medium;
-        }
+.bg {
+    display: block;
+    align-items: center;
+
+    .my_score {
+        padding: 10px;
+        font-size: large;
+        color: navy;
+        font-weight: 800;
+        text-align: center;
+    }
+
 }

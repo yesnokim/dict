@@ -1,0 +1,21 @@
+.result_table {
+    width: 100%;
+    text-align: center;
+
+    .header_cell {
+        font-size: large;
+        text-align: center;
+    }
+
+    .wrong {
+        color: red;
+        font-weight: 1000;
+        font-size: medium;
+        text-align: center;
+    }
+
+    .correct {
+        font-size: medium;
+        text-align: center;
+    }
+}
