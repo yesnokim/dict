@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/dict/static/css/main.ddd211e9.css",
-    "main.js": "/dict/static/js/main.ddcc313f.js",
+    "main.css": "/dict/static/css/main.6ae7b808.css",
+    "main.js": "/dict/static/js/main.71653644.js",
     "static/js/787.10b44fcc.chunk.js": "/dict/static/js/787.10b44fcc.chunk.js",
     "index.html": "/dict/index.html",
-    "main.ddd211e9.css.map": "/dict/static/css/main.ddd211e9.css.map",
-    "main.ddcc313f.js.map": "/dict/static/js/main.ddcc313f.js.map",
+    "main.6ae7b808.css.map": "/dict/static/css/main.6ae7b808.css.map",
+    "main.71653644.js.map": "/dict/static/js/main.71653644.js.map",
     "787.10b44fcc.chunk.js.map": "/dict/static/js/787.10b44fcc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ddd211e9.css",
-    "static/js/main.ddcc313f.js"
+    "static/css/main.6ae7b808.css",
+    "static/js/main.71653644.js"
   ]
 }
