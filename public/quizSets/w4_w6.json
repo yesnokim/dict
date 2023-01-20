@@ -1,0 +1,62 @@
+[
+  {
+    "dict": "letter",
+    "trans": "편지, 글자"
+  },
+  {
+    "dict": "night",
+    "trans": "밤"
+  },
+  {
+    "dict": "school",
+    "trans": "학교"
+  },
+  {
+    "dict": "street",
+    "trans": "거리"
+  },
+  {
+    "dict": "rain",
+    "trans": "비, 비가 오다"
+  },
+  {
+    "dict": "watch",
+    "trans": "보다, 지켜보다, 손목시계"
+  },
+  {
+    "dict": "money",
+    "trans": "돈"
+  },
+  {
+    "dict": "pig",
+    "trans": "돼지"
+  },
+  {
+    "dict": "tree",
+    "trans": "나무"
+  },
+  {
+    "dict": "house",
+    "trans": "집"
+  },
+  {
+    "dict": "thing",
+    "trans": "(사물) 것, 물건"
+  },
+  {
+    "dict": "home",
+    "trans": "집, 고향"
+  },
+  {
+    "dict": "hand",
+    "trans": "손, 도움, 건네주다"
+  },
+  {
+    "dict": "time",
+    "trans": "시간, 시각, 몇 번"
+  },
+  {
+    "dict": "name",
+    "trans": "이름"
+  }
+]
