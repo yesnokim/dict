@@ -14,77 +14,92 @@ const QuizSet = [
   {
     dict: "feet",
     sentence: "Look at the feet! So cute!",
-    korean: "발 좀 봐. 너무 귀여워"
+    korean: "발 좀 봐. 너무 귀여워",
+    answer: "feet"
   },
   {
     dict: "flower",
     sentence: "Those are flowers.",
-    korean: "저것들은 꽃들입니다."
+    korean: "저것들은 꽃들입니다.",
+    answer: "flowers"
   },
   {
     dict: "bread",
     sentence: "This is my bread.",
-    korean: "이것은 나의 빵이다."
+    korean: "이것은 나의 빵이다.",
+    answer: "bread"
   },
   {
     dict: "goodbye",
     sentence: "goodbye, see you tomorrow",
-    korean: "잘가, 내일 만나"
+    korean: "잘가, 내일 만나",
+    answer: "goodbye"
   },
   {
     dict: "farmer",
     sentence: "He is a farmer.",
-    korean: "그는 농부다."
+    korean: "그는 농부다.",
+    answer: "farmer"
   },
   {
     dict: "baby",
     sentence: "The baby is small.",
-    korean: "그 아기는 작다."
+    korean: "그 아기는 작다.",
+    answer: "baby"
   },
   {
     dict: "brother",
     sentence: "I have two brothers.",
-    korean: "나는 두 명의 형제가 있다."
+    korean: "나는 두 명의 형제가 있다.",
+    answer: "brothers"
   },
   {
     dict: "chair",
     sentence: "My chair is old.",
-    korean: "내 의자가 낡았다."
+    korean: "내 의자가 낡았다.",
+    answer: "chair"
   },
   {
     dict: "children",
     sentence: "I like children.",
-    korean: "난 아이들 좋아해."
+    korean: "난 아이들 좋아해.",
+    answer: "children"
   },
   {
     dict: "cow",
     sentence: "My father has seven cows.",
-    korean: "아버지는 소 일곱 마리를 가지고 계셔."
+    korean: "아버지는 소 일곱 마리를 가지고 계셔.",
+    answer: "cows"
   },
   {
     dict: "girl",
     sentence: "The girl is my friend.",
-    korean: "그 소녀는 나의 친구이다."
+    korean: "그 소녀는 나의 친구이다.",
+    answer: "girl"
   },
   {
     dict: "bird",
     sentence: "Birds have wings.",
-    korean: "새들은 날개를 가지고 있다."
+    korean: "새들은 날개를 가지고 있다.",
+    answer: "bird"
   },
   {
     dict: "egg",
     sentence: "It's an egg.",
-    korean: "그것은 달걀이다."
+    korean: "그것은 달걀이다.",
+    answer: "egg"
   },
   {
     dict: "birthday",
     sentence: "When is your birthday.",
-    korean: "너 생일이 언제니?"
+    korean: "너 생일이 언제니?",
+    answer: "birthday"
   },
   {
     dict: "chicken",
     sentence: "The chicken is very tasty.",
-    korean: "닭은 매우 맛있다."
+    korean: "닭은 매우 맛있다.",
+    answer: "chicken"
   }
 ];
 
@@ -117,12 +132,12 @@ const Sentence = () => {
   const makeQuiz = () => {
     const problemJson = getRandomQuiz();
 
-    let regex = new RegExp("(" + problemJson.dict + ")", "gi");
+    let regex = new RegExp("(" + problemJson.answer + ")", "gi");
     const sentence = problemJson.sentence.replace(regex, (m) =>
       Array(m.length).join("_")
     );
     const korean = problemJson.korean;
-    const answer = problemJson.dict.toLowerCase();
+    const answer = problemJson.answer.toLowerCase();
     setQuiz({ sentence, korean, answer });
   };
 
@@ -220,7 +235,7 @@ const Sentence = () => {
             {!!value ? "O" : "X"}
           </TableCell>
           <TableCell className={!value ? "wrong" : ""}>
-            {QuizSet[key].dict}
+            {QuizSet[key].answer}
           </TableCell>
         </TableRow>
       );
