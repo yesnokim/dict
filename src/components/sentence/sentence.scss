@@ -17,7 +17,7 @@
     }
     
     .contents {
-        margin: 20px;
+        margin-top: 20px;
         // width: 400px;
         .dict {
             color: navy;
@@ -34,21 +34,25 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            height: 200px;
+            // height: 200px;
             
             .quizSentence {
                 font-size: large;
             }
             
             .quizKorean {
-                margin: 20px;
+                margin-top: 20px;
                 font-size: large;
                 color: blue
+            }
+
+            .answer_box {
+                margin-top: 10px;
             }
         }
         
         .score {
-            margin: 20px;
+            margin-top: 20px;
             font-size: x-large;
             
             .my_score {
@@ -75,7 +79,7 @@
     
     
     .footer {
-        margin-top: 10px;
+        // margin-top: 10px;
         
         .button_group {
             display: flex;
